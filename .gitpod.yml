@@ -1,0 +1,34 @@
+image:
+  file: .gitpod.Dockerfile
+
+
+# tasks:
+#   - init: npm i -g @cloudflare/wrangler
+#   - init: |
+#      npm i -g create-react-app
+#      npm i -g @cloudflare/wrangler
+#       cd web && npm install
+#   - command: |
+#       cd web && npm start
+      
+#   - name: Static Server
+#     command: python3 -m http.server 8080
+#   - name: DB Server
+#     command: sh ./scripts/start-db.sh
+#     openMode: split-right
+github:
+  prebuilds:
+    # enable for the default branch (defaults to true)
+    master: true
+    # enable for all branches in this repo (defaults to false)
+    branches: true
+    # enable for pull requests coming from this repo (defaults to true)
+    pullRequests: true
+    # enable for pull requests coming from forks (defaults to false)
+    pullRequestsFromForks: false
+    # add a check to pull requests (defaults to true)
+    addCheck: true
+    # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
+    addComment: false
+    # add a "Review in Gitpod" button to the pull request's description (defaults to false)
+    addBadge: false
